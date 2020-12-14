@@ -1,1 +1,4 @@
-这份文件被改造了，可以输出视频的json，但是在处理视频时，总是会缺失两帧，所以选择在处理视频时候就直接保存croped image到result_img文件夹。
+This depository is modified from original darknet. I add some functions to crop the detected objects and save them into a folder when processing video.
+
+Usage:
+./darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights  traffic-016.mp4 -dont_show -out trafficout.json -out_filename res.avi
