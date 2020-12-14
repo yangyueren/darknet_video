@@ -54,5 +54,8 @@ dkms.conf
 
 *.weights
 *.mp4
+*.avi
+/weights
 /build
 /build_release
+.vscode

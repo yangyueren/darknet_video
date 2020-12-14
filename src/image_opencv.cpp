@@ -1149,7 +1149,7 @@ extern "C" void draw_detections_cv_v3_yyy(mat_cv* mat, detection *dets, int num,
                 // static int img_id = 0;
                 int img_id = i;
                 char image_name[1024];
-                sprintf(image_name, "%s/img_%07d_%07d_%03d_%s.jpg", folder_name, frame_id, img_id, class_id, names[class_id]);
+                sprintf(image_name, "%s/%s_%07d_%07d_%03d_%s.jpg", folder_name, folder_name, frame_id, img_id, class_id, names[class_id]);
                 printf("%s\n", image_name);
                 CvRect rect = cvRect(pt1.x, pt1.y, pt2.x - pt1.x, pt2.y - pt1.y);
                 cvSetImageROI(copy_img, rect);
