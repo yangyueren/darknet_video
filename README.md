@@ -1,5 +1,7 @@
 This depository is modified from original [darknet](https://github.com/AlexeyAB/darknet). I add some functions to crop the detected objects and save them into a folder when processing video.
 
+Environment:
+opencv 3.4: https://zhuanlan.zhihu.com/p/276010938
 
 Usage:
 
