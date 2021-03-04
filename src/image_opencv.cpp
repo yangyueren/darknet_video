@@ -996,7 +996,7 @@ extern "C" void draw_detections_cv_v3(mat_cv* mat, detection *dets, int num, flo
                    copied_frame_id = frame_id;
                 //    if(copy_img == NULL) copy_img = cvCreateImage(cvSize(show_img->cols, show_img->rows), IPL_DEPTH_8U, show_img->channels());
                 //    cvCopy(show_img, copy_img, 0);
-                    IplImage imgTmp = *show_img;
+                    IplImage imgTmp = cvIplImage(*show_img);
                    copy_img = cvCloneImage(&imgTmp);
                 }
                 static int img_id = 0;
@@ -1143,7 +1143,7 @@ extern "C" void draw_detections_cv_v3_yyy(mat_cv* mat, detection *dets, int num,
                    copied_frame_id = frame_id;
                 //    if(copy_img == NULL) copy_img = cvCreateImage(cvSize(show_img->cols, show_img->rows), IPL_DEPTH_8U, show_img->channels());
                 //    cvCopy(show_img, copy_img, 0);
-                    IplImage imgTmp = *show_img;
+                    IplImage imgTmp = cvIplImage(*show_img);
                    copy_img = cvCloneImage(&imgTmp);
                 }
                 // static int img_id = 0;
